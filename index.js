@@ -22,8 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 app.use((err, req, res, next) => {
-    // console.log(err);
+     console.log(err);
     return res.send('Internal Server Error');
 });
 
-app.listen(3000, () => console.log('Server is runngin on port 3000'));
+app.listen(3000, () => console.log('Server is running on port 3000'));
